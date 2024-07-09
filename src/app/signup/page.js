@@ -74,13 +74,9 @@ function SignUpPage() {
   return (
     <div>
       <Navbar />  {/* Include the Navbar component */}
-      <div className="flex flex-col md:flex-row h-screen items-center justify-center p-4 bg-green-200 pt-60 md:pt-16">
+      <div className="flex flex-col md:flex-row h-screen items-center justify-center p-4 bg-white-green-200 pt-60 md:pt-16">
         {/* Sign Up Form */}
-        <div className="mx-8">
-          <h1 className="text-5xl font-bold text-black text-center mt-4 md:mt-0 opacity-0 animate-slideInLeft">Lingo AI</h1>
-          <img className="h-64 animate-dropInBounce" src="globe.png" alt="Globe"/>
-        </div>
-        <div className="flex flex-col items-center gap-6 bg-white p-8 shadow-md rounded-md bg-opacity-80 backdrop-blur-md">
+         <div className="flex flex-col items-center gap-6 bg-white p-8 shadow-md rounded-md bg-opacity-80 backdrop-blur-md">
           <h2 className="text-2xl font-bold text-black">Create an account</h2>
           <form className="flex flex-col items-center gap-4" onSubmit={handleSignUp}>
             <input
@@ -112,14 +108,7 @@ function SignUpPage() {
               className="w-full p-3 bg-teal-600 text-white rounded hover:bg-teal-700"
             >
               Sign up
-            </button>
-            <button
-              type="button"
-              className="w-full p-3 bg-red-600 text-white rounded hover:bg-red-700 mt-4"
-              onClick={handleGoogleSignUp}
-            >
-              Sign up with Google
-            </button>
+            </button>            
             <p className="mt-4 text-gray-600">
               Already have an account?{" "}
               <span
