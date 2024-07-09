@@ -563,26 +563,8 @@ function LanguageSelection() {
 							>
 								Easy
 							</button>
-							<button
-								className={`px-4 py-2 rounded-lg shadow-md focus:outline-none transform transition duration-300 ease-in-out hover:scale-105 ${
-									difficulty === "medium"
-										? "bg-blue-500 text-white"
-										: "bg-white text-gray-800"
-								}`}
-								onClick={() => handleDifficultySelect("medium")}
-							>
-								Medium
-							</button>
-							<button
-								className={`px-4 py-2 rounded-lg shadow-md focus:outline-none transform transition duration-300 ease-in-out hover:scale-105 ${
-									difficulty === "hard"
-										? "bg-blue-500 text-white"
-										: "bg-white text-gray-800"
-								}`}
-								onClick={() => handleDifficultySelect("hard")}
-							>
-								Hard
-							</button>
+							
+							
 						</div>
 						<button
 							className='mt-4 px-4 py-2 bg-white text-gray-800 rounded-lg shadow-md focus:outline-none transform transition duration-300 ease-in-out hover:scale-105'
