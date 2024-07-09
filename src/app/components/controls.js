@@ -43,7 +43,7 @@ export async function handleStopConversation(
 			//   language: selectedLanguage,
 			//   topScores,
 			// });
-			const response = await axios.post(`https://backend-young-haze-7759.fly.dev/receive_text`, {
+			const response = await axios.post(`https://pyt-jet.vercel.app/receive_text`, {
 			  messages: filteredMessages,
 			  language: selectedLanguage,
 			  topScores,
