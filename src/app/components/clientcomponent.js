@@ -12,14 +12,14 @@ export default function ClientComponent({ accessToken }) {
   const [completedFeedback, setCompletedFeedback] = useState(false);
   const [feedback, setFeedback] = useState([]);
   const [messageScores, setMessageScores] = useState({});
-  const [configId, setConfigId] = useState("4f6cde50-0d72-421e-85c8-ca746076817c");
+  const [configId, setConfigId] = useState("a3ba7b9d-f616-427b-994c-7d53fc62c815");
   const [isLoading, setIsLoading] = useState(false); // Loading state
 
   useEffect(() => {
     const selectedDifficulty = localStorage.getItem("selectedDifficulty");
     switch (selectedDifficulty) {
       case "easy":
-        setConfigId("4f6cde50-0d72-421e-85c8-ca746076817c");
+        setConfigId("a3ba7b9d-f616-427b-994c-7d53fc62c815");
         break;
       case "medium":
         setConfigId("cb509718-e9ed-43cb-be32-000ec95d1491");
@@ -28,7 +28,7 @@ export default function ClientComponent({ accessToken }) {
         setConfigId("d3d371bd-6c69-408b-8a6d-1768033e945e");
         break;
       default:
-        setConfigId("4f6cde50-0d72-421e-85c8-ca746076817c");
+        setConfigId("a3ba7b9d-f616-427b-994c-7d53fc62c815");
     }
   }, []);
 
