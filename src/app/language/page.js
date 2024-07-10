@@ -457,13 +457,13 @@ function LanguageSelection() {
 	const getConfigId = () => {
 		switch (difficulty) {
 			case "easy":
-				return "4f6cde50-0d72-421e-85c8-ca746076817c";
+				return "a3ba7b9d-f616-427b-994c-7d53fc62c815";
 			case "medium":
 				return "cb509718-e9ed-43cb-be32-000ec95d1491";
 			case "hard":
 				return "d3d371bd-6c69-408b-8a6d-1768033e945e";
 			default:
-				return "4f6cde50-0d72-421e-85c8-ca746076817c";
+				return "a3ba7b9d-f616-427b-994c-7d53fc62c815";
 		}
 	};
 
@@ -563,8 +563,26 @@ function LanguageSelection() {
 							>
 								Easy
 							</button>
-							
-							
+							{/* <button
+								className={`px-4 py-2 rounded-lg shadow-md focus:outline-none transform transition duration-300 ease-in-out hover:scale-105 ${
+									difficulty === "medium"
+										? "bg-blue-500 text-white"
+										: "bg-white text-gray-800"
+								}`}
+								onClick={() => handleDifficultySelect("medium")}
+							>
+								Medium
+							</button>
+							<button
+								className={`px-4 py-2 rounded-lg shadow-md focus:outline-none transform transition duration-300 ease-in-out hover:scale-105 ${
+									difficulty === "hard"
+										? "bg-blue-500 text-white"
+										: "bg-white text-gray-800"
+								}`}
+								onClick={() => handleDifficultySelect("hard")}
+							>
+								Hard
+							</button> */}
 						</div>
 						<button
 							className='mt-4 px-4 py-2 bg-white text-gray-800 rounded-lg shadow-md focus:outline-none transform transition duration-300 ease-in-out hover:scale-105'
