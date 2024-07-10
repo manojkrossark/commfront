@@ -12,8 +12,8 @@ function Page() {
 		async function getSession() {
 			try {
 				const token = await fetchAccessToken({
-					apiKey: "YGSKyA2uV6J11vdqubK7DZCZVqIZfZiIEAV4tko6CHnHiViL",
-					secretKey: "hgY2Xh250LPGfe6whker5LXrMnxnsbbhmyZ54lAdq2BMOqccAWiyjiEm0avVTZAN",
+					apiKey: "bNzRE1GgZYalChjbylGtqFVxAaf6uYK7AnDGPUJ14YG033tY",
+					secretKey: "EBdwum8m7A84RLituk2d9PYa5LPcLZ2D8XlSYQWaGNtJSChlGl0uUMOXSjZAsc0f",
 				});
 
 				if (!token) {
